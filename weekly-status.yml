@@ -1,0 +1,61 @@
+# File: .github/ISSUE_TEMPLATE/weekly-status.yml
+name: Weekly Status Report
+description: Track completed work, planned tasks, and blockers
+title: "W[XX] | [StudentFirstName] | [ProjectName]"
+labels: ["status"]
+assignees: []
+
+body:
+  - type: input
+    id: week-start
+    attributes:
+      label: Week Starting (Monday)
+      description: Use the Monday date for this reporting week.
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Instructions:
+        - Use bullet points or checkboxes where appropriate.
+        - Focus on what you completed, plan to do, and what is blocked or requires input.
+        - Use @mentions for anything that needs coordination.
+        - Title format: `W[XX] | [StudentFirstName] | [ProjectName]` (e.g., `W12 | Alice | ConsentUX`)
+
+  - type: textarea
+    id: completed
+    attributes:
+      label: Completed
+      description: Tasks or milestones finished during this week.
+      placeholder: |
+        - Recruited 3 new participants (P07–P09)
+        - Coded interview P06 and added memo
+        - Integrated IRB feedback into protocol v2
+    validations:
+      required: true
+
+  - type: textarea
+    id: planned
+    attributes:
+      label: Planned
+      description: Next steps, ongoing analysis, writing, or outreach.
+      placeholder: |
+        - Schedule sessions for P10–P12
+        - Begin thematic coding for round 2
+        - Draft related work section on informed consent
+    validations:
+      required: true
+
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Blockers / Needs
+      description: Anything blocking progress or needing action from others (e.g., access, decisions, reviews).
+      placeholder: |
+        - Waiting on @bob to confirm scheduling slots
+        - Need decision on revised consent language
+        - Zoom transcription quota exhausted — request pending
+    validations:
+      required: false
