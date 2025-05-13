@@ -1,4 +1,5 @@
 # File: .github/ISSUE_TEMPLATE/weekly-status.yml
+# NOTE: Org-wide templates are in a public repo, so don't put anything sensitive directly in this template.
 name: Weekly Status Report
 description: Track completed work, planned tasks, and blockers
 title: "W[XX] | [StudentFirstName] | [ProjectName]"
